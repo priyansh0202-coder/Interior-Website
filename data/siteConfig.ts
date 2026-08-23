@@ -1,0 +1,27 @@
+export const siteConfig = {
+  name: "Example.in",
+  shortName: "Example.in",
+  tagline: "Thoughtfully finished interiors, for the way you live.",
+  founderName: "Example.in",
+  foundedYear: 2005,
+  description:
+    "Example Interiors brings craft and care to every wall, from first coat to final finish. Trusted across Example for precision and craft.",
+  phone: "+91 98XXX XXXXX",
+  whatsappNumber: "+919800000000",
+  email: "hello@example.in",
+  officeAddress: "Example, Example, Example, India",
+  workingHours: "Monday - Saturday: 9:00 AM - 7:30 PM",
+  experienceYears: 20,
+  completedProjectsCount: "540+",
+  ongoingProjectsCount: "28+",
+  happyClientsCount: "540+",
+  citiesServedCount: "14",
+  rating: "4.9",
+  reviewsCount: "230+",
+  socialLinks: {
+    instagram: "https://instagram.com",
+    facebook: "https://facebook.com",
+    linkedin: "https://linkedin.com",
+    pinterest: "https://pinterest.com",
+  },
+};
