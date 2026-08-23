@@ -16,7 +16,7 @@ export default function HomePage() {
       <HomeHero />
 
       {/* 2. 4 Value Pillars Bar */}
-      <FeaturePillars />
+      {/* <FeaturePillars /> */}
 
       {/* 3. Our Story / 2x2 Stats / Founder */}
       <OurStory />
@@ -30,7 +30,7 @@ export default function HomePage() {
       {/* 6. Featured Projects */}
       <FeaturedProjects />
 
-      {/* 7. Why Choose Surekha + Customer Testimonials */}
+      {/* 7. Why Choose  + Customer Testimonials */}
       <WhyChooseUsAndTestimonials />
 
       {/* 8. Trusted Brands Marquee */}

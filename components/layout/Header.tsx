@@ -40,7 +40,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-7 text-xs font-medium text-[#575E58]">
+        <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-[#575E58]">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (

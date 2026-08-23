@@ -44,7 +44,7 @@ export function CompanyProfile() {
           <div className="rounded-3xl overflow-hidden border border-[#E0D8CB] shadow-lg">
             <img
               src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop"
-              alt="Surekha Heritage"
+              alt="Heritage"
               className="w-full h-[380px] object-cover"
             />
           </div>

@@ -14,7 +14,7 @@ export function FreeSiteVisitBanner() {
     }
   };
 
-  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber.replace(/[^0-9]/g, "")}?text=Hi%20Surekha%20Interiors,%20I%20would%20like%20to%20request%20a%20free%20site%20visit.`;
+  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber.replace(/[^0-9]/g, "")}?text=Hi%20John%20Interiors,%20I%20would%20like%20to%20request%20a%20free%20site%20visit.`;
 
   return (
     <section className="py-10 bg-[#FAF8F5]">

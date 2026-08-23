@@ -56,7 +56,7 @@ export function OurProcess() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Left Column: Heading & CTA */}
             <div className="lg:col-span-4">
-              <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#9FB5A6]">
+              <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#E5A93C]">
                 OUR PROCESS
               </span>
               <h2 className="mt-2 text-2xl sm:text-3xl font-serif font-bold text-white leading-snug">

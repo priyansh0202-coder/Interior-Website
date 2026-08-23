@@ -54,7 +54,7 @@ export function OurStory() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left: Story and Founder */}
           <div className="lg:col-span-4">
-            <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#767E77]">
+            <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#E5A93C]">
               OUR STORY
             </span>
             <h2 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[#171B18] leading-tight">
@@ -62,22 +62,22 @@ export function OurStory() {
               Crafted with purpose.
             </h2>
             <p className="mt-4 text-xs sm:text-sm text-[#575E58] leading-relaxed">
-              Founded in 2005 by Ramesh Surekha, we've grown from a two-person paint crew into a full interior and building finishing studio, trusted across Pune for precision and craft.
+              Founded in 2010 by John Doe, we've grown from a two-person paint crew into a full interior and building finishing studio, trusted across Pune for precision and craft.
             </p>
 
             <div className="mt-8 flex items-center gap-4 pt-4 border-t border-[#EAE5DC]">
               {/* Stylized Signature Mockup */}
               <div className="font-serif italic text-lg text-[#20382B] opacity-80 select-none">
-                Ramesh Surekha
+                John Doe
               </div>
               <div className="flex items-center gap-2 pl-4 border-l border-[#EAE5DC]">
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop"
-                  alt="Ramesh Surekha"
+                  alt="John Doe"
                   className="w-9 h-9 rounded-full object-cover ring-1 ring-[#EAE5DC]"
                 />
                 <div className="flex flex-col">
-                  <span className="text-xs font-bold text-[#171B18]">Ramesh Surekha</span>
+                  <span className="text-xs font-bold text-[#171B18]">Ramesh John</span>
                   <span className="text-[10px] text-[#767E77]">Founder</span>
                 </div>
               </div>
@@ -113,7 +113,7 @@ export function OurStory() {
             <div className="rounded-[2rem] overflow-hidden bg-[#E8E1D5] h-[380px] shadow-lg border border-[#E0D8CB]">
               <img
                 src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop"
-                alt="Surekha Interior Decor"
+                alt="Interior Decor"
                 className="w-full h-full object-cover"
               />
             </div>

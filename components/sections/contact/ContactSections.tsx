@@ -10,7 +10,7 @@ export function ContactHero() {
     <section className="py-16 bg-[#FAF8F5] border-b border-[#EAE5DC] text-center">
       <div className="mx-auto max-w-4xl px-6">
         <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#767E77]">
-          CONNECT WITH SUREKHA
+          CONNECT WITH John Doe
         </span>
         <h1 className="mt-3 text-3xl sm:text-5xl font-serif font-bold text-[#171B18] leading-tight">
           Request a Free Quote & Site Visit

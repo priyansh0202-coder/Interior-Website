@@ -35,7 +35,7 @@ export function FeaturedProjects() {
         {/* Header with Navigation Arrows */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8">
           <div>
-            <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#767E77]">
+            <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#E5A93C]">
               RECENT WORK
             </span>
             <h2 className="mt-1.5 text-2xl sm:text-3xl font-serif font-bold text-[#171B18]">
