@@ -89,11 +89,11 @@ export function WhyChooseUsAndTestimonials() {
                   key={idx}
                   className="p-4 rounded-2xl bg-white border border-[#EAE5DC] flex items-start gap-3 shadow-xs"
                 >
-                  <div className="w-8 h-8 rounded-full bg-[#F4EFE6] text-[#20382B] flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-[#F4EFE6] text-[#20382B] flex items-center justify-center shrink-0">
                     {item.icon}
                   </div>
                   <div>
-                    <h4 className="text-xs font-serif font-bold text-[#171B18]">
+                    <h4 className="text-md font-serif font-bold text-[#171B18]">
                       {item.title}
                     </h4>
                     <p className="text-[10px] text-[#767E77] mt-0.5 leading-tight">
