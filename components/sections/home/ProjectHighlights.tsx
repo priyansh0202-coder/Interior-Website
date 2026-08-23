@@ -6,67 +6,63 @@ import { Button } from "@/components/ui/Button";
 
 export function ProjectHighlights() {
   return (
-    <section className="py-20 md:py-28 bg-stone-950 text-white">
+    <section className="py-16 bg-[#FAF8F5]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8">
           <SectionHeader
-            badge="Signature Showcase"
+            badge="SIGNATURE SHOWCASE"
             title="Featured Projects & Landmarks"
             subtitle="Explore our ongoing and recently handed-over interior and exterior projects."
             align="left"
             className="mb-0"
-            light
           />
-          <Button href="/projects" variant="outline" size="sm" className="mt-6 md:mt-0 border-stone-700 text-stone-300 hover:bg-stone-800">
+          <Button href="/projects" variant="secondary" size="sm" className="mt-4 md:mt-0">
             View All Projects
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projectsData.slice(0, 4).map((project) => (
             <div
               key={project.id}
-              className="group relative rounded-3xl overflow-hidden bg-stone-900 border border-stone-800"
+              className="group rounded-2xl overflow-hidden bg-white border border-[#EAE5DC] shadow-xs"
             >
-              <div className="relative h-72 sm:h-80 w-full overflow-hidden">
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-stone-100">
                 <img
                   src={project.coverImage}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 flex gap-2">
+                <div className="absolute top-3 left-3 flex gap-2">
                   <span
-                    className={`px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-full ${
+                    className={`px-3 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full ${
                       project.status === "ongoing"
-                        ? "bg-amber-500 text-stone-950"
-                        : "bg-emerald-600 text-white"
+                        ? "bg-[#E5A93C] text-black"
+                        : "bg-white text-[#20382B]"
                     }`}
                   >
-                    {project.status === "ongoing" ? "Ongoing Project" : "Completed"}
-                  </span>
-                  <span className="px-3 py-1 text-xs uppercase tracking-wider rounded-full bg-stone-900/80 text-stone-300 backdrop-blur-sm">
-                    {project.category}
+                    {project.status === "ongoing" ? "Ongoing" : "Completed"}
                   </span>
                 </div>
               </div>
 
-              <div className="p-6 sm:p-8">
-                <p className="text-xs uppercase tracking-widest text-amber-400 font-semibold">
+              <div className="p-5 sm:p-6">
+                <p className="text-[10px] uppercase tracking-widest text-[#767E77] font-semibold">
                   {project.location} • {project.architectName}
                 </p>
-                <h3 className="mt-2 text-2xl font-serif font-semibold text-white">
+                <h3 className="mt-1 text-lg font-serif font-bold text-[#171B18]">
                   {project.title}
                 </h3>
-                <p className="mt-3 text-sm text-stone-400 line-clamp-2">
+                <p className="mt-2 text-xs text-[#575E58] line-clamp-2">
                   {project.description}
                 </p>
-                <div className="mt-6 pt-4 border-t border-stone-800 flex justify-between items-center">
-                  <span className="text-xs text-stone-400">
-                    Client: <strong className="text-white">{project.clientName}</strong>
+                <div className="mt-4 pt-3 border-t border-[#F4EFE6] flex justify-between items-center text-xs">
+                  <span className="text-[#767E77]">
+                    Client: <strong className="text-[#171B18]">{project.clientName}</strong>
                   </span>
                   <Link
                     href="/projects"
-                    className="text-xs font-semibold text-amber-400 hover:text-amber-300 uppercase tracking-wider"
+                    className="font-semibold text-[#20382B] hover:underline"
                   >
                     View Details →
                   </Link>

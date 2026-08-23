@@ -6,41 +6,40 @@ import { Button } from "@/components/ui/Button";
 
 export function FeaturedServices() {
   return (
-    <section className="py-20 md:py-28 bg-stone-950 text-white">
+    <section className="py-16 bg-[#FAF8F5]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeader
-          badge="What We Deliver"
+          badge="WHAT WE DELIVER"
           title="Master Coating & Building Services"
           subtitle="From bespoke luxury apartment interiors to multi-storey facade painting, we provide end-to-end craftsmanship."
-          light
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {servicesData.slice(0, 6).map((service) => (
             <div
               key={service.id}
-              className="group relative rounded-3xl bg-stone-900 border border-stone-800 p-6 sm:p-8 hover:border-amber-500/50 transition-all duration-300 flex flex-col justify-between"
+              className="group relative rounded-2xl bg-white border border-[#EAE5DC] p-6 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                <div className="h-48 w-full rounded-2xl overflow-hidden mb-6 bg-stone-800">
+                <div className="h-44 w-full rounded-xl overflow-hidden mb-5 bg-stone-100">
                   <img
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <h3 className="text-xl font-serif font-semibold text-white group-hover:text-amber-400 transition-colors">
+                <h3 className="text-base font-serif font-bold text-[#171B18] group-hover:text-[#20382B] transition-colors">
                   {service.title}
                 </h3>
-                <p className="mt-3 text-sm text-stone-400 leading-relaxed">
+                <p className="mt-2 text-xs text-[#575E58] leading-relaxed">
                   {service.shortDescription}
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-stone-800 flex items-center justify-between">
+              <div className="mt-5 pt-3 border-t border-[#F4EFE6] flex items-center justify-between">
                 <Link
                   href="/services"
-                  className="text-xs font-semibold uppercase tracking-widest text-amber-400 hover:text-amber-300"
+                  className="text-xs font-semibold text-[#20382B] hover:underline"
                 >
                   Explore Details →
                 </Link>
@@ -49,9 +48,9 @@ export function FeaturedServices() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <Button href="/services" variant="gold" size="md">
-            View All 10+ Services
+        <div className="mt-10 text-center">
+          <Button href="/services" variant="primary" size="md" withArrow>
+            View All Services
           </Button>
         </div>
       </div>
