@@ -48,7 +48,7 @@ export function GalleryFilterGrid() {
               onClick={() => setActiveTag(t.value)}
               className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
                 activeTag === t.value
-                  ? "bg-[#20382B] text-white shadow-xs"
+                  ? "bg-[#2B1D16] text-white shadow-xs"
                   : "bg-white text-[#575E58] hover:text-[#171B18] border border-[#EAE5DC]"
               }`}
             >
@@ -71,13 +71,13 @@ export function GalleryFilterGrid() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5 text-white">
-                  <span className="text-[10px] uppercase tracking-widest text-[#C8D6CD] font-semibold">
+                  <span className="text-[10px] uppercase tracking-widest text-[#D9C7B8] font-semibold">
                     📍 {item.location} • {item.category}
                   </span>
                   <h3 className="text-lg font-serif font-bold text-white mt-1">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-[#E1EAE4] mt-1 line-clamp-2">
+                  <p className="text-xs text-[#EFE4DA] mt-1 line-clamp-2">
                     {item.description}
                   </p>
                 </div>

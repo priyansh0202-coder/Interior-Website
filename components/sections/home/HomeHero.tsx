@@ -103,7 +103,7 @@ export function HomeHero() {
 
             {/* Subtitle */}
             <p className="mt-5 text-sm sm:text-base text-[#575E58] leading-relaxed max-w-md">
-              Example Interiors brings craft and care to every wall, from first coat to final finish.
+              Colourfull Spaces brings craft and care to every wall, from first coat to final finish.
             </p>
 
             {/* CTAs */}
@@ -151,7 +151,7 @@ export function HomeHero() {
                     alt="Client"
                   />
                 </div>
-                <span className="px-2.5 py-1 rounded-full bg-[#20382B] text-white text-[10px] font-bold tracking-tight">
+                <span className="px-2.5 py-1 rounded-full bg-[#2B1D16] text-white text-[10px] font-bold tracking-tight">
                   +536
                 </span>
               </div>
@@ -213,7 +213,7 @@ export function HomeHero() {
                   <span className="text-[10px] text-[#767E77]">Commercial - Baner, Pune</span>
                   <Link
                     href="/projects"
-                    className="text-[10px] font-semibold text-[#20382B] hover:underline mt-0.5"
+                    className="text-[10px] font-semibold text-[#2B1D16] hover:underline mt-0.5"
                   >
                     View project →
                   </Link>
@@ -236,7 +236,7 @@ export function HomeHero() {
                   }`}
                 >
                   <div className="w-10 h-10 shrink-0 rounded-xl bg-[#F4EFE6] border border-[#EAE5DC] flex items-center justify-center">
-                    <Icon className="w-4.5 h-4.5 text-[#20382B]" strokeWidth={1.75} />
+                    <Icon className="w-4.5 h-4.5 text-[#2B1D16]" strokeWidth={1.75} />
                   </div>
                   <div>
                     <p className="text-xs sm:text-sm font-semibold text-[#171B18] leading-tight">

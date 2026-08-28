@@ -67,7 +67,7 @@ export function OurStory() {
 
             <div className="mt-8 flex items-center gap-4 pt-4 border-t border-[#EAE5DC]">
               {/* Stylized Signature Mockup */}
-              <div className="font-serif italic text-lg text-[#20382B] opacity-80 select-none">
+              <div className="font-serif italic text-lg text-[#2B1D16] opacity-80 select-none">
                 John Doe
               </div>
               <div className="flex items-center gap-2 pl-4 border-l border-[#EAE5DC]">
@@ -92,7 +92,7 @@ export function OurStory() {
                   key={idx}
                   className="p-5 rounded-2xl bg-[#F4EFE6] border border-[#E8E1D5] flex flex-col justify-between"
                 >
-                  <div className="w-8 h-8 rounded-full bg-white text-[#20382B] flex items-center justify-center mb-4 shadow-sm">
+                  <div className="w-8 h-8 rounded-full bg-white text-[#2B1D16] flex items-center justify-center mb-4 shadow-sm">
                     {item.icon}
                   </div>
                   <div>

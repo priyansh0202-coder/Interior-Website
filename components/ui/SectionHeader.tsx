@@ -30,7 +30,7 @@ export function SectionHeader({
         <span
           className={cn(
             "text-[11px] font-semibold uppercase tracking-[0.2em] mb-2.5",
-            light ? "text-[#A3B8AA]" : "text-[#767E77]"
+            light ? "text-[#9C6644]" : "text-[#767E77]"
           )}
         >
           {badge}
@@ -39,7 +39,7 @@ export function SectionHeader({
       <h2
         className={cn(
           "text-2xl sm:text-3xl lg:text-4xl font-serif font-semibold tracking-tight leading-snug",
-          light ? "text-white" : "text-[#171B18]"
+          light ? "text-[#1E150F]" : "text-[#171B18]"
         )}
       >
         {title}
@@ -48,7 +48,7 @@ export function SectionHeader({
         <p
           className={cn(
             "mt-3 text-sm sm:text-base leading-relaxed max-w-2xl",
-            light ? "text-[#CAD5CE]" : "text-[#575E58]"
+            light ? "text-[#6A574A]" : "text-[#575E58]"
           )}
         >
           {subtitle}

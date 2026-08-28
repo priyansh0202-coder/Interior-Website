@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/data/siteConfig";
 import { Button } from "@/components/ui/Button";
@@ -21,20 +22,26 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#EAE5DC] transition-all duration-200">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
-        {/* Brand Logo with Hexagon */}
-        <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-lg bg-[#20382B] text-white flex items-center justify-center font-serif text-sm font-bold shadow-sm">
-            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-              <path d="M12 2L2 7.5v9L12 22l10-5.5v-9L12 2zm0 2.31l7.5 4.12v7.14L12 19.69l-7.5-4.12V8.43L12 4.31z" />
-            </svg>
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-3.5">
+        {/* Brand Logo */}
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden shadow-md ring-2 ring-[#DFCBB7] shrink-0">
+            <Image
+              src="/assets/favicon.png"
+              alt="Colourfull Spaces"
+              width={64}
+              height={64}
+              priority
+              unoptimized
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
           </div>
-          <div className="flex flex-col">
-            <span className="text-base font-serif font-bold text-[#171B18] leading-none tracking-tight">
-              {siteConfig.name.split(" ")[0]}
+          <div className="flex flex-col justify-center">
+            <span className="text-base sm:text-lg font-serif font-bold text-[#1E150F] tracking-tight leading-none group-hover:text-[#9C6644] transition-colors">
+              Colourfull Spaces
             </span>
-            <span className="text-[10px] font-sans font-semibold uppercase tracking-[0.2em] text-[#767E77] leading-none mt-1">
-              {siteConfig.name.split(" ")[1] || "Interiors"}
+            <span className="text-[9px] sm:text-[10px] font-sans font-semibold uppercase tracking-[0.25em] text-[#9C6644] leading-none mt-1">
+              Interiors
             </span>
           </div>
         </Link>

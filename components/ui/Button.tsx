@@ -25,12 +25,12 @@ export function Button({
     "inline-flex items-center justify-center font-medium rounded-full transition-all duration-200 focus:outline-none disabled:opacity-50 disabled:pointer-events-none cursor-pointer tracking-tight";
 
   const variants = {
-    primary: "bg-[#20382B] text-white hover:bg-[#172B20] shadow-sm hover:shadow-md",
+    primary: "bg-[#2B1D16] text-white hover:bg-[#1C110B] shadow-sm hover:shadow-md",
     secondary: "bg-[#F4EFE6] text-[#171B18] hover:bg-[#EBE4D8] border border-[#E0D8CB]",
     white: "bg-white text-[#171B18] hover:bg-[#F8F6F2] shadow-sm border border-stone-200/80",
-    outline: "border border-[#20382B] text-[#20382B] hover:bg-[#20382B] hover:text-white bg-transparent",
+    outline: "border border-[#2B1D16] text-[#2B1D16] hover:bg-[#2B1D16] hover:text-white bg-transparent",
     ghost: "text-[#171B18] hover:bg-[#F4EFE6]",
-    gold: "bg-[#20382B] text-white hover:bg-[#172B20] shadow-sm hover:shadow-md",
+    gold: "bg-[#2B1D16] text-white hover:bg-[#1C110B] shadow-sm hover:shadow-md",
   };
 
   const sizes = {

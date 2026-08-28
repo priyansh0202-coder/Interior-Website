@@ -77,7 +77,7 @@ export function WhyChooseUsAndTestimonials() {
           {/* Left Column: Why Choose Interior */}
           <div className="lg:col-span-5">
             <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#767E77]">
-              WHY CHOOSE Example
+              WHY CHOOSE COLOURFULL SPACES
             </span>
             <h2 className="mt-1.5 text-2xl sm:text-3xl font-serif font-bold text-[#171B18]">
               Finishing with purpose
@@ -89,7 +89,7 @@ export function WhyChooseUsAndTestimonials() {
                   key={idx}
                   className="p-4 rounded-2xl bg-white border border-[#EAE5DC] flex items-start gap-3 shadow-xs"
                 >
-                  <div className="w-10 h-10 rounded-full bg-[#F4EFE6] text-[#20382B] flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-[#F4EFE6] text-[#2B1D16] flex items-center justify-center shrink-0">
                     {item.icon}
                   </div>
                   <div>

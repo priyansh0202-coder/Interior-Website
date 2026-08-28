@@ -60,7 +60,7 @@ export function MaterialsCatalog() {
                 <ul className="space-y-2 text-xs text-[#575E58]">
                   {item.features.map((f, i) => (
                     <li key={i} className="flex items-center gap-2">
-                      <span className="text-[#20382B] font-bold">✓</span>
+                      <span className="text-[#2B1D16] font-bold">✓</span>
                       <span>{f}</span>
                     </li>
                   ))}

@@ -59,7 +59,7 @@ export function ArchitectsCollaborations() {
 
               <div className="pt-4 border-t border-[#F2EDE4] flex justify-between items-center text-xs text-[#767E77]">
                 <span>Joint Projects:</span>
-                <strong className="text-[#20382B] font-bold">{client.collaborationCount}+ Sites</strong>
+                <strong className="text-[#2B1D16] font-bold">{client.collaborationCount}+ Sites</strong>
               </div>
             </div>
           ))}

@@ -42,7 +42,7 @@ export function FeaturePillars({ className = "" }: { className?: string }) {
                   }`}
                 >
                   <div className="w-10 h-10 shrink-0 rounded-xl bg-[#F4EFE6] border border-[#EAE5DC] flex items-center justify-center">
-                    <Icon className="w-4.5 h-4.5 text-[#20382B]" strokeWidth={1.75} />
+                    <Icon className="w-4.5 h-4.5 text-[#2B1D16]" strokeWidth={1.75} />
                   </div>
                   <div>
                     <p className="text-xs sm:text-sm font-semibold text-[#171B18] leading-tight">

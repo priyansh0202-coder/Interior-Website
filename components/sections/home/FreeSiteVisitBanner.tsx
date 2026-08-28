@@ -19,21 +19,21 @@ export function FreeSiteVisitBanner() {
   return (
     <section className="py-10 bg-[#FAF8F5]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="rounded-[2rem] bg-[#1E3527] text-white p-6 sm:p-8 shadow-xl relative overflow-hidden">
+        <div className="rounded-[2rem] bg-[#EFE7DC] border border-[#DFCBB7] text-[#1E150F] p-6 sm:p-8 shadow-xl relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left: Headline & info */}
             <div className="lg:col-span-4 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center text-white shrink-0">
+              <div className="w-12 h-12 rounded-2xl bg-white border border-[#DFCBB7] flex items-center justify-center text-[#9C6644] shrink-0 shadow-xs">
                 <svg className="w-6 h-6 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                   <polyline points="9 22 9 12 15 12 15 22" />
                 </svg>
               </div>
               <div>
-                <h3 className="text-base sm:text-lg font-serif font-bold text-white leading-snug">
+                <h3 className="text-base sm:text-lg font-serif font-bold text-[#1E150F] leading-snug">
                   Get a free site visit
                 </h3>
-                <p className="text-xs text-[#AABDAF] mt-0.5">
+                <p className="text-xs text-[#6A574A] mt-0.5">
                   Share your number, our team will call within a day.
                 </p>
               </div>
@@ -42,11 +42,11 @@ export function FreeSiteVisitBanner() {
             {/* Middle: Phone input pill with Request call button */}
             <div className="lg:col-span-5">
               {submitted ? (
-                <div className="p-3 bg-white/10 rounded-full text-center text-xs text-[#C8D6CD]">
+                <div className="p-3 bg-white rounded-full text-center text-xs text-[#9C6644] border border-[#DFCBB7] font-medium shadow-xs">
                   ✓ Request received! We'll call you shortly.
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="flex items-center bg-white rounded-full p-1.5 shadow-sm">
+                <form onSubmit={handleSubmit} className="flex items-center bg-white rounded-full p-1.5 shadow-sm border border-[#DFCBB7]">
                   <input
                     type="tel"
                     required
@@ -57,7 +57,7 @@ export function FreeSiteVisitBanner() {
                   />
                   <button
                     type="submit"
-                    className="px-5 py-2.5 rounded-full bg-[#172B20] text-white text-xs font-semibold hover:bg-[#0F1E16] transition-colors cursor-pointer shrink-0"
+                    className="px-5 py-2.5 rounded-full bg-[#2B1D16] text-white text-xs font-semibold hover:bg-[#432E22] transition-colors cursor-pointer shrink-0"
                   >
                     Request call
                   </button>
@@ -79,10 +79,10 @@ export function FreeSiteVisitBanner() {
                   </svg>
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-xs font-bold text-white group-hover:underline leading-none">
+                  <span className="text-xs font-bold text-[#1E150F] group-hover:underline leading-none">
                     Chat on WhatsApp
                   </span>
-                  <span className="text-[10px] text-[#AABDAF] mt-0.5 leading-none">
+                  <span className="text-[10px] text-[#6A574A] mt-0.5 leading-none">
                     Quick replies
                   </span>
                 </div>

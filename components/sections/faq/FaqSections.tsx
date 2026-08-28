@@ -50,7 +50,7 @@ export function FaqAccordionList() {
                     {faq.question}
                   </span>
                   <span
-                    className={`text-[#20382B] text-lg font-bold transition-transform duration-200 ${
+                    className={`text-[#2B1D16] text-lg font-bold transition-transform duration-200 ${
                       isOpen ? "rotate-45" : ""
                     }`}
                   >

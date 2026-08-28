@@ -38,7 +38,7 @@ export function ProjectHighlights() {
                     className={`px-3 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full ${
                       project.status === "ongoing"
                         ? "bg-[#E5A93C] text-black"
-                        : "bg-white text-[#20382B]"
+                        : "bg-white text-[#2B1D16]"
                     }`}
                   >
                     {project.status === "ongoing" ? "Ongoing" : "Completed"}
@@ -62,7 +62,7 @@ export function ProjectHighlights() {
                   </span>
                   <Link
                     href="/projects"
-                    className="font-semibold text-[#20382B] hover:underline"
+                    className="font-semibold text-[#2B1D16] hover:underline"
                   >
                     View Details →
                   </Link>

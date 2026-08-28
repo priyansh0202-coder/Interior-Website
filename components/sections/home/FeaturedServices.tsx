@@ -28,7 +28,7 @@ export function FeaturedServices() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <h3 className="text-base font-serif font-bold text-[#171B18] group-hover:text-[#20382B] transition-colors">
+                <h3 className="text-base font-serif font-bold text-[#171B18] group-hover:text-[#2B1D16] transition-colors">
                   {service.title}
                 </h3>
                 <p className="mt-2 text-xs text-[#575E58] leading-relaxed">
@@ -39,7 +39,7 @@ export function FeaturedServices() {
               <div className="mt-5 pt-3 border-t border-[#F4EFE6] flex items-center justify-between">
                 <Link
                   href="/services"
-                  className="text-xs font-semibold text-[#20382B] hover:underline"
+                  className="text-xs font-semibold text-[#2B1D16] hover:underline"
                 >
                   Explore Details →
                 </Link>

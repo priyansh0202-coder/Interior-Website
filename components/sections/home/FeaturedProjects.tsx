@@ -7,7 +7,7 @@ export function FeaturedProjects() {
       title: "Residential, Pune - Interior",
       desc: "Complete interior painting and texture finishes for a modern apartment.",
       status: "Completed",
-      statusColor: "bg-white text-[#20382B]",
+      statusColor: "bg-white text-[#2B1D16]",
       image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=600&auto=format&fit=crop",
       href: "/projects",
     },
@@ -23,7 +23,7 @@ export function FeaturedProjects() {
       title: "Villa, Baramati - Interior",
       desc: "Luxury interior painting with premium finishes and elegant textures.",
       status: "Completed",
-      statusColor: "bg-white text-[#20382B]",
+      statusColor: "bg-white text-[#2B1D16]",
       image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=600&auto=format&fit=crop",
       href: "/projects",
     },
@@ -46,7 +46,7 @@ export function FeaturedProjects() {
           <div className="flex items-center gap-4 mt-4 sm:mt-0">
             <Link
               href="/projects"
-              className="text-xs font-semibold text-[#171B18] hover:text-[#20382B] transition-colors"
+              className="text-xs font-semibold text-[#171B18] hover:text-[#2B1D16] transition-colors"
             >
               View all projects →
             </Link>
@@ -101,7 +101,7 @@ export function FeaturedProjects() {
                 <div className="mt-4 pt-3 border-t border-[#F2EDE4]">
                   <Link
                     href={item.href}
-                    className="text-xs font-semibold text-[#20382B] hover:underline inline-flex items-center gap-1"
+                    className="text-xs font-semibold text-[#2B1D16] hover:underline inline-flex items-center gap-1"
                   >
                     View project →
                   </Link>

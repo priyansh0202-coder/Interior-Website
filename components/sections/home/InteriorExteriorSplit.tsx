@@ -27,20 +27,20 @@ export function InteriorExteriorSplit() {
           </div>
 
           {/* Exterior Focus Box */}
-          <div className="rounded-3xl p-8 sm:p-10 bg-[#1E3527] text-white shadow-md flex flex-col justify-between min-h-[320px]">
+          <div className="rounded-3xl p-8 sm:p-10 bg-[#EFE7DC] border border-[#DFCBB7] text-[#1E150F] shadow-md flex flex-col justify-between min-h-[320px]">
             <div>
-              <span className="text-[10px] uppercase tracking-widest font-semibold text-[#9FB5A6]">
+              <span className="text-[10px] uppercase tracking-widest font-semibold text-[#9C6644]">
                 EXTERIOR & BUILDING WORKS
               </span>
-              <h3 className="mt-2 text-2xl font-serif font-bold text-white">
+              <h3 className="mt-2 text-2xl font-serif font-bold text-[#1E150F]">
                 High-Rise Facades, Waterproofing & Societies
               </h3>
-              <p className="mt-3 text-xs sm:text-sm text-[#C8D6CD] leading-relaxed">
+              <p className="mt-3 text-xs sm:text-sm text-[#6A574A] leading-relaxed">
                 Weather-proof silicon elastomeric coatings, structural waterproofing membranes, scaffolding access, and 10-year systemic guarantees.
               </p>
             </div>
             <div className="mt-6">
-              <Button href="/services" variant="white" size="sm" withArrow>
+              <Button href="/services" variant="primary" size="sm" withArrow>
                 Explore Exterior Solutions
               </Button>
             </div>

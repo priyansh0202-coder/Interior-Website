@@ -54,7 +54,7 @@ export function ProjectFilterGrid() {
               onClick={() => setFilter(c.value)}
               className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
                 filter === c.value
-                  ? "bg-[#20382B] text-white shadow-xs"
+                  ? "bg-[#2B1D16] text-white shadow-xs"
                   : "bg-white text-[#575E58] hover:text-[#171B18] border border-[#EAE5DC]"
               }`}
             >
@@ -81,7 +81,7 @@ export function ProjectFilterGrid() {
                     className={`px-3 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full shadow-xs ${
                       project.status === "ongoing"
                         ? "bg-[#E5A93C] text-black"
-                        : "bg-white text-[#20382B]"
+                        : "bg-white text-[#2B1D16]"
                     }`}
                   >
                     {project.status === "ongoing" ? "Ongoing" : "Completed"}

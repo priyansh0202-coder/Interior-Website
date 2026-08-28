@@ -52,21 +52,21 @@ export function OurProcess() {
   return (
     <section className="py-12 bg-[#FAF8F5]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="rounded-[2.5rem] bg-[#1E3527] text-white p-8 sm:p-12 lg:p-14 shadow-2xl relative overflow-hidden">
+        <div className="rounded-[2.5rem] bg-[#EFE7DC] border border-[#DFCBB7] text-[#1E150F] p-8 sm:p-12 lg:p-14 shadow-xl relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Left Column: Heading & CTA */}
             <div className="lg:col-span-4">
-              <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#E5A93C]">
+              <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-[#9C6644]">
                 OUR PROCESS
               </span>
-              <h2 className="mt-2 text-2xl sm:text-3xl font-serif font-bold text-white leading-snug">
+              <h2 className="mt-2 text-2xl sm:text-3xl font-serif font-bold text-[#1E150F] leading-snug">
                 Our process, your perfect finish
               </h2>
-              <p className="mt-3 text-xs sm:text-sm text-[#C8D6CD] leading-relaxed">
+              <p className="mt-3 text-xs sm:text-sm text-[#6A574A] leading-relaxed">
                 Every project is planned and executed with care, from surface prep to the final coat, in interior and exterior work alike.
               </p>
               <div className="mt-6">
-                <Button href="/services" variant="white" size="sm" withArrow>
+                <Button href="/services" variant="primary" size="sm" withArrow>
                   View our process
                 </Button>
               </div>
@@ -77,16 +77,16 @@ export function OurProcess() {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 relative">
                 {steps.map((item, idx) => (
                   <div key={idx} className="flex flex-col items-start relative z-10">
-                    <div className="w-12 h-12 rounded-full bg-white/10 border border-white/20 text-[#D8E6DC] flex items-center justify-center mb-3">
+                    <div className="w-12 h-12 rounded-full bg-white border border-[#DFCBB7] text-[#9C6644] flex items-center justify-center mb-3 shadow-xs">
                       {item.icon}
                     </div>
-                    <span className="text-[11px] font-mono text-[#9FB5A6] font-bold">
+                    <span className="text-[11px] font-mono text-[#9C6644] font-bold">
                       {item.step}
                     </span>
-                    <h4 className="text-sm font-serif font-bold text-white mt-1">
+                    <h4 className="text-sm font-serif font-bold text-[#1E150F] mt-1">
                       {item.title}
                     </h4>
-                    <p className="text-[11px] text-[#AABDAF] mt-1 leading-snug">
+                    <p className="text-[11px] text-[#6A574A] mt-1 leading-snug">
                       {item.desc}
                     </p>
                   </div>

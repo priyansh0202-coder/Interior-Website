@@ -54,7 +54,7 @@ export function RequestQuoteAndMap() {
             <div className="p-6 sm:p-8 rounded-2xl bg-white border border-[#EAE5DC] shadow-xs">
               {submitted ? (
                 <div className="py-12 text-center">
-                  <div className="w-12 h-12 rounded-full bg-[#EBF2EC] text-[#20382B] flex items-center justify-center mx-auto mb-3 font-bold">
+                  <div className="w-12 h-12 rounded-full bg-[#F3ECE4] text-[#2B1D16] flex items-center justify-center mx-auto mb-3 font-bold">
                     ✓
                   </div>
                   <h3 className="text-lg font-serif font-bold text-[#171B18]">
@@ -75,7 +75,7 @@ export function RequestQuoteAndMap() {
                         required
                         type="text"
                         placeholder="Your name"
-                        className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] placeholder-stone-400 focus:outline-none focus:border-[#20382B]"
+                        className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] placeholder-stone-400 focus:outline-none focus:border-[#2B1D16]"
                       />
                     </div>
                     <div>
@@ -86,7 +86,7 @@ export function RequestQuoteAndMap() {
                         required
                         type="tel"
                         placeholder="98XXX XXXXX"
-                        className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] placeholder-stone-400 focus:outline-none focus:border-[#20382B]"
+                        className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] placeholder-stone-400 focus:outline-none focus:border-[#2B1D16]"
                       />
                     </div>
                   </div>
@@ -99,7 +99,7 @@ export function RequestQuoteAndMap() {
                       <input
                         type="email"
                         placeholder="example@email.com"
-                        className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] placeholder-stone-400 focus:outline-none focus:border-[#20382B]"
+                        className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] placeholder-stone-400 focus:outline-none focus:border-[#2B1D16]"
                       />
                     </div>
                     <div>
@@ -107,7 +107,7 @@ export function RequestQuoteAndMap() {
                         Select service
                       </label>
                       <select
-                        className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] focus:outline-none focus:border-[#20382B]"
+                        className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] focus:outline-none focus:border-[#2B1D16]"
                       >
                         <option value="">Select type</option>
                         <option value="interior">Interior painting</option>
@@ -126,13 +126,13 @@ export function RequestQuoteAndMap() {
                     <textarea
                       rows={3}
                       placeholder="Tell us about your project"
-                      className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] placeholder-stone-400 focus:outline-none focus:border-[#20382B]"
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] placeholder-stone-400 focus:outline-none focus:border-[#2B1D16]"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-3 rounded-xl bg-[#20382B] text-white text-xs font-semibold hover:bg-[#172B20] transition-colors cursor-pointer"
+                    className="w-full py-3 rounded-xl bg-[#2B1D16] text-white text-xs font-semibold hover:bg-[#1C110B] transition-colors cursor-pointer"
                   >
                     Submit enquiry →
                   </button>
@@ -155,7 +155,7 @@ export function RequestQuoteAndMap() {
               <div className="absolute inset-0 bg-stone-100/40" />
 
               {/* Pin icon */}
-              <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl text-[#20382B] drop-shadow-md">
+              <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl text-[#2B1D16] drop-shadow-md">
                 📍
               </div>
 
@@ -174,7 +174,7 @@ export function RequestQuoteAndMap() {
                   href="https://maps.google.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[10px] font-semibold text-[#20382B] hover:underline inline-block mt-1.5"
+                  className="text-[10px] font-semibold text-[#2B1D16] hover:underline inline-block mt-1.5"
                 >
                   View on map →
                 </a>

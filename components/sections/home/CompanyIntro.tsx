@@ -39,9 +39,9 @@ export function CompanyIntro() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-4 -left-4 bg-[#20382B] text-white p-5 rounded-2xl shadow-xl font-serif max-w-[180px]">
+            <div className="absolute -bottom-4 -left-4 bg-[#2B1D16] text-white p-5 rounded-2xl shadow-xl font-serif max-w-[180px]">
               <span className="text-3xl font-bold block">{siteConfig.experienceYears}+</span>
-              <span className="text-[10px] uppercase font-sans font-semibold tracking-wider text-[#A3B8AA]">
+              <span className="text-[10px] uppercase font-sans font-semibold tracking-wider text-[#D1B8A5]">
                 Years of Craftsmanship
               </span>
             </div>

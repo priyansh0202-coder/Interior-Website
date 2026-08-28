@@ -144,7 +144,7 @@ export function ServiceCategoryGrid() {
                 <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-[#575E58]">
                   {service.features.map((f, i) => (
                     <div key={i} className="flex items-center gap-2">
-                      <span className="text-[#20382B] font-bold">✓</span>
+                      <span className="text-[#2B1D16] font-bold">✓</span>
                       <span>{f}</span>
                     </div>
                   ))}

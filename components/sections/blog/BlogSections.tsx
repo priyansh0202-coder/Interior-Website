@@ -37,7 +37,7 @@ export function BlogGrid() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-3 left-3">
-                    <span className="px-3 py-1 text-[10px] font-semibold uppercase tracking-wider rounded-full bg-white text-[#20382B] shadow-xs">
+                    <span className="px-3 py-1 text-[10px] font-semibold uppercase tracking-wider rounded-full bg-white text-[#2B1D16] shadow-xs">
                       {post.category}
                     </span>
                   </div>
@@ -50,7 +50,7 @@ export function BlogGrid() {
                     <span>{post.readTime}</span>
                   </div>
 
-                  <h3 className="text-xl font-serif font-bold text-[#171B18] group-hover:text-[#20382B] transition-colors">
+                  <h3 className="text-xl font-serif font-bold text-[#171B18] group-hover:text-[#2B1D16] transition-colors">
                     {post.title}
                   </h3>
                   <p className="mt-2 text-xs sm:text-sm text-[#575E58] leading-relaxed">
@@ -68,7 +68,7 @@ export function BlogGrid() {
                   />
                   <span className="text-xs text-[#575E58]">{post.author.name}</span>
                 </div>
-                <span className="text-xs font-semibold text-[#20382B] group-hover:underline">
+                <span className="text-xs font-semibold text-[#2B1D16] group-hover:underline">
                   Read article →
                 </span>
               </div>

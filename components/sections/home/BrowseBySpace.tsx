@@ -39,7 +39,7 @@ export function BrowseBySpace() {
           </div>
           <Link
             href="/gallery"
-            className="text-xs font-semibold text-[#171B18] hover:text-[#20382B] flex items-center gap-1 mt-4 sm:mt-0 transition-colors"
+            className="text-xs font-semibold text-[#171B18] hover:text-[#2B1D16] flex items-center gap-1 mt-4 sm:mt-0 transition-colors"
           >
             View all spaces →
           </Link>

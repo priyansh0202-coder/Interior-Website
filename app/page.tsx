@@ -24,7 +24,7 @@ export default function HomePage() {
       {/* 4. Browse by Space Visual Cards */}
       <BrowseBySpace />
 
-      {/* 5. Our Process Dark Green Banner */}
+      {/* 5. Our Process Dark Wood Banner */}
       <OurProcess />
 
       {/* 6. Featured Projects */}
