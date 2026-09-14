@@ -22,9 +22,6 @@ export const siteConfig = {
   rating: "4.9",
   reviewsCount: "230+",
   socialLinks: {
-    instagram: "https://instagram.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    pinterest: "https://pinterest.com",
+    whatsapp: "https://wa.me/919800000000",
   },
 };

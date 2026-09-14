@@ -33,10 +33,21 @@ export function Footer() {
             <p className="mt-4 text-xs leading-relaxed text-[#6A574A] max-w-sm">
               Thoughtfully finished interiors, for the way you live. Bringing craft and care to every wall across Pune and beyond.
             </p>
-            <div className="mt-6 flex items-center gap-3 text-xs text-[#6A574A]">
-              <a href={siteConfig.socialLinks.facebook} className="w-7 h-7 rounded-full bg-white border border-[#DFCBB7] flex items-center justify-center text-[#574A40] hover:text-[#1E150F] hover:bg-[#F8F3ED] transition-colors shadow-xs">f</a>
-              <a href={siteConfig.socialLinks.instagram} className="w-7 h-7 rounded-full bg-white border border-[#DFCBB7] flex items-center justify-center text-[#574A40] hover:text-[#1E150F] hover:bg-[#F8F3ED] transition-colors shadow-xs">in</a>
-              <a href={siteConfig.socialLinks.pinterest} className="w-7 h-7 rounded-full bg-white border border-[#DFCBB7] flex items-center justify-center text-[#574A40] hover:text-[#1E150F] hover:bg-[#F8F3ED] transition-colors shadow-xs">p</a>
+            <div className="mt-6">
+              <a
+                href={siteConfig.socialLinks.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-white border border-[#DFCBB7] text-xs font-semibold text-[#1E150F] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all shadow-xs group"
+                aria-label="Connect on WhatsApp"
+              >
+                <div className="w-5 h-5 rounded-full bg-[#25D366] text-white flex items-center justify-center group-hover:bg-white group-hover:text-[#25D366] transition-colors">
+                  <svg className="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+                  </svg>
+                </div>
+                <span>WhatsApp</span>
+              </a>
             </div>
           </div>
 

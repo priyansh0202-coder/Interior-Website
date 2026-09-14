@@ -4,27 +4,27 @@ import Link from "next/link";
 export function FeaturedProjects() {
   const projects = [
     {
-      title: "Residential, Pune - Interior",
-      desc: "Complete interior painting and texture finishes for a modern apartment.",
-      status: "Completed",
-      statusColor: "bg-white text-[#2B1D16]",
-      image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=600&auto=format&fit=crop",
-      href: "/projects",
-    },
-    {
-      title: "Office, Baner - Exterior",
-      desc: "Exterior painting and waterproof coating for a commercial building.",
+      title: "MP Dhairyasheel Mane Estate, Kolhapur",
+      desc: "Turnkey hillside estate execution, artisanal timber ceiling PU polishing, reflecting pools, and weather-shield facade by Ar. Satyajeet Bhosale.",
       status: "Ongoing",
       statusColor: "bg-[#E5A93C] text-black font-semibold",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop",
+      image: "/assets/kolhapur/kolhapur_13.jpeg",
       href: "/projects",
     },
     {
-      title: "Villa, Baramati - Interior",
-      desc: "Luxury interior painting with premium finishes and elegant textures.",
+      title: "Gupta Villa & Interior, Magarpatta, Pune",
+      desc: "Turnkey luxury villa painting, bookmatched Italian marble wall protection, and exterior finishing by Ar. Pratik (Evolve Studio).",
+      status: "Ongoing",
+      statusColor: "bg-[#E5A93C] text-black font-semibold",
+      image: "/assets/evolve_studio/evolve_studio_2.jpeg",
+      href: "/projects",
+    },
+    {
+      title: "Contemporary Luxury Villa, Wagholi, Pune",
+      desc: "Turnkey interior luxury painting, vertical oak wall paneling, double-height atrium drapery, and Italian PU wood finishes.",
       status: "Completed",
       statusColor: "bg-white text-[#2B1D16]",
-      image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=600&auto=format&fit=crop",
+      image: "/assets/wagholi/wagholi_12.jpeg",
       href: "/projects",
     },
   ];
