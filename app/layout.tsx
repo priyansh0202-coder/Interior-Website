@@ -37,7 +37,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`h-full scroll-smooth ${sansFont.variable} ${serifFont.variable}`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      data-scroll-behavior="smooth"
+      className={`h-full scroll-smooth ${sansFont.variable} ${serifFont.variable}`}
+    >
       <body className="min-h-full flex flex-col bg-[#FAF8F5] text-[#171B18] antialiased font-sans">
         <Header />
         <main className="flex-1">{children}</main>

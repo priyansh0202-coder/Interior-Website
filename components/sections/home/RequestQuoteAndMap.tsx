@@ -4,11 +4,52 @@ import React, { useState } from "react";
 import { siteConfig } from "@/data/siteConfig";
 
 export function RequestQuoteAndMap() {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phone: "",
+    email: "",
+    service: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setErrorMessage(null);
+    setLoading(true);
+
+    const sheetUrl =
+      process.env.NEXT_PUBLIC_GOOGLE_SHEET_URL ||
+      "https://script.google.com/macros/s/AKfycbyvwpCc-DyOAGtN1lcZoLjwHNQ6HIP7gxJLNxuZpxi0WzRtca14TDtgX2N_--HOI0svhg/exec";
+
+    try {
+      await fetch(sheetUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting contact form:", error);
+      setErrorMessage("Failed to submit enquiry. Please try again or contact us directly.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -63,28 +104,55 @@ export function RequestQuoteAndMap() {
                   <p className="text-xs text-[#575E58] mt-1 max-w-sm mx-auto">
                     Thank you! Our supervisor from Baner will call you within 24 hours to schedule your site inspection.
                   </p>
+                  <button
+                    onClick={() => {
+                      setSubmitted(false);
+                      setFormData({
+                        fullName: "",
+                        phone: "",
+                        email: "",
+                        service: "",
+                        message: "",
+                      });
+                    }}
+                    className="mt-5 text-xs text-[#2B1D16] font-semibold underline hover:opacity-80 cursor-pointer"
+                  >
+                    Submit another enquiry
+                  </button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {errorMessage && (
+                    <div className="p-3 text-xs text-red-700 bg-red-50 border border-red-200 rounded-xl">
+                      {errorMessage}
+                    </div>
+                  )}
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-[10px] font-semibold text-[#767E77] uppercase tracking-wider mb-1">
-                        Full name
+                        Full name *
                       </label>
                       <input
                         required
                         type="text"
+                        name="fullName"
+                        value={formData.fullName}
+                        onChange={handleChange}
                         placeholder="Your name"
                         className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] placeholder-stone-400 focus:outline-none focus:border-[#2B1D16]"
                       />
                     </div>
                     <div>
                       <label className="block text-[10px] font-semibold text-[#767E77] uppercase tracking-wider mb-1">
-                        Phone number
+                        Phone number *
                       </label>
                       <input
                         required
                         type="tel"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
                         placeholder="98XXX XXXXX"
                         className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] placeholder-stone-400 focus:outline-none focus:border-[#2B1D16]"
                       />
@@ -98,6 +166,9 @@ export function RequestQuoteAndMap() {
                       </label>
                       <input
                         type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                         placeholder="example@email.com"
                         className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] placeholder-stone-400 focus:outline-none focus:border-[#2B1D16]"
                       />
@@ -107,14 +178,17 @@ export function RequestQuoteAndMap() {
                         Select service
                       </label>
                       <select
+                        name="service"
+                        value={formData.service}
+                        onChange={handleChange}
                         className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] focus:outline-none focus:border-[#2B1D16]"
                       >
                         <option value="">Select type</option>
-                        <option value="interior">Interior painting</option>
-                        <option value="exterior">Exterior painting</option>
-                        <option value="waterproofing">Waterproofing</option>
-                        <option value="texture">Texture finishes</option>
-                        <option value="polishing">Wood polishing</option>
+                        <option value="Interior painting">Interior painting</option>
+                        <option value="Exterior painting">Exterior painting</option>
+                        <option value="Waterproofing">Waterproofing</option>
+                        <option value="Texture finishes">Texture finishes</option>
+                        <option value="Wood polishing">Wood polishing</option>
                       </select>
                     </div>
                   </div>
@@ -125,6 +199,9 @@ export function RequestQuoteAndMap() {
                     </label>
                     <textarea
                       rows={3}
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
                       placeholder="Tell us about your project"
                       className="w-full px-3.5 py-2.5 rounded-xl bg-white border border-[#E0D8CB] text-xs text-[#171B18] placeholder-stone-400 focus:outline-none focus:border-[#2B1D16]"
                     />
@@ -132,9 +209,36 @@ export function RequestQuoteAndMap() {
 
                   <button
                     type="submit"
-                    className="w-full py-3 rounded-xl bg-[#2B1D16] text-white text-xs font-semibold hover:bg-[#1C110B] transition-colors cursor-pointer"
+                    disabled={loading}
+                    className="w-full py-3 rounded-xl bg-[#2B1D16] text-white text-xs font-semibold hover:bg-[#1C110B] transition-colors cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                   >
-                    Submit enquiry →
+                    {loading ? (
+                      <>
+                        <svg
+                          className="animate-spin h-4 w-4 text-white"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <circle
+                            className="opacity-25"
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                          ></circle>
+                          <path
+                            className="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8v8H4z"
+                          ></path>
+                        </svg>
+                        <span>Submitting enquiry...</span>
+                      </>
+                    ) : (
+                      "Submit enquiry →"
+                    )}
                   </button>
                 </form>
               )}

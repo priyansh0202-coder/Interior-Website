@@ -5,16 +5,42 @@ import { siteConfig } from "@/data/siteConfig";
 
 export function FreeSiteVisitBanner() {
   const [phone, setPhone] = useState("");
+  const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (phone.trim()) {
+    if (!phone.trim()) return;
+
+    setLoading(true);
+    const sheetUrl =
+      process.env.NEXT_PUBLIC_GOOGLE_SHEET_URL ||
+      "https://script.google.com/macros/s/AKfycbyvwpCc-DyOAGtN1lcZoLjwHNQ6HIP7gxJLNxuZpxi0WzRtca14TDtgX2N_--HOI0svhg/exec";
+
+    try {
+      await fetch(sheetUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName: "Quick Callback Request",
+          phone: phone.trim(),
+          email: "",
+          service: "Free Site Visit Call",
+          message: "Requested a callback from banner",
+        }),
+      });
       setSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting quick site visit request:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
-  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber.replace(/[^0-9]/g, "")}?text=Hi%20John%20Interiors,%20I%20would%20like%20to%20request%20a%20free%20site%20visit.`;
+  const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumber.replace(/[^0-9]/g, "")}?text=Hi%20Colourfull%20Spaces,%20I%20would%20like%20to%20request%20a%20free%20site%20visit.`;
 
   return (
     <section className="py-10 bg-[#FAF8F5]">
@@ -57,9 +83,10 @@ export function FreeSiteVisitBanner() {
                   />
                   <button
                     type="submit"
-                    className="px-5 py-2.5 rounded-full bg-[#2B1D16] text-white text-xs font-semibold hover:bg-[#432E22] transition-colors cursor-pointer shrink-0"
+                    disabled={loading}
+                    className="px-5 py-2.5 rounded-full bg-[#2B1D16] text-white text-xs font-semibold hover:bg-[#432E22] transition-colors cursor-pointer shrink-0 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Request call
+                    {loading ? "Sending..." : "Request call"}
                   </button>
                 </form>
               )}

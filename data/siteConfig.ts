@@ -4,7 +4,8 @@ export const siteConfig = {
   logo: "/assets/favicon.png",
   favicon: "/assets/favicon.png",
   tagline: "Designing Spaces • Inspiring Lives",
-  founderName: "Colourfull Spaces",
+  founderName: "Ppan Nav",
+  coFounderName: "Mjh Nav",
   foundedYear: 2005,
   description:
     "Colourfull Spaces brings luxury craft, precision finishes, and elegant interior solutions to homes and commercial spaces.",
@@ -14,10 +15,10 @@ export const siteConfig = {
   officeAddress: "Colourfull Spaces Studio, Pune, Maharashtra, India",
   workingHours: "Monday - Saturday: 9:00 AM - 7:30 PM",
   experienceYears: 20,
-  completedProjectsCount: "540+",
+  completedProjectsCount: "350+",
   ongoingProjectsCount: "28+",
-  happyClientsCount: "540+",
-  citiesServedCount: "14",
+  happyClientsCount: "350+",
+  citiesServedCount: "12",
   rating: "4.9",
   reviewsCount: "230+",
   socialLinks: {

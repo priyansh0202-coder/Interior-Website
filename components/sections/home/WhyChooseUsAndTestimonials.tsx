@@ -1,4 +1,5 @@
 import React from "react";
+import { siteConfig } from "@/data/siteConfig";
 
 export function WhyChooseUsAndTestimonials() {
   const whyChooseList = [
@@ -36,8 +37,8 @@ export function WhyChooseUsAndTestimonials() {
       ),
     },
     {
-      title: "540+ clients",
-      desc: "Across 14 cities",
+      title: `${siteConfig.happyClientsCount} clients`,
+      desc: `Across ${siteConfig.citiesServedCount} cities`,
       icon: (
         <svg className="w-4 h-4 stroke-current fill-none stroke-2" viewBox="0 0 24 24">
           <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />

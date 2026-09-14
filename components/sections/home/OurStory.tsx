@@ -62,23 +62,31 @@ export function OurStory() {
               Crafted with purpose.
             </h2>
             <p className="mt-4 text-xs sm:text-sm text-[#575E58] leading-relaxed">
-              Founded in 2010 by John Doe, we've grown from a two-person paint crew into a full interior and building finishing studio, trusted across Pune for precision and craft.
+              Founded by {siteConfig.founderName} and {siteConfig.coFounderName}, we&apos;ve grown from a dedicated craft team into a full interior and building finishing studio, trusted across {siteConfig.citiesServedCount} cities for precision and craft.
             </p>
 
-            <div className="mt-8 flex items-center gap-4 pt-4 border-t border-[#EAE5DC]">
-              {/* Stylized Signature Mockup */}
-              <div className="font-serif italic text-lg text-[#2B1D16] opacity-80 select-none">
-                John Doe
-              </div>
-              <div className="flex items-center gap-2 pl-4 border-l border-[#EAE5DC]">
+            <div className="mt-8 flex flex-wrap items-center gap-5 pt-4 border-t border-[#EAE5DC]">
+              <div className="flex items-center gap-2.5">
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop"
-                  alt="John Doe"
+                  alt={siteConfig.founderName}
                   className="w-9 h-9 rounded-full object-cover ring-1 ring-[#EAE5DC]"
                 />
                 <div className="flex flex-col">
-                  <span className="text-xs font-bold text-[#171B18]">Ramesh John</span>
+                  <span className="text-xs font-bold text-[#171B18]">{siteConfig.founderName}</span>
                   <span className="text-[10px] text-[#767E77]">Founder</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2.5 pl-4 border-l border-[#EAE5DC]">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop"
+                  alt={siteConfig.coFounderName}
+                  className="w-9 h-9 rounded-full object-cover ring-1 ring-[#EAE5DC]"
+                />
+                <div className="flex flex-col">
+                  <span className="text-xs font-bold text-[#171B18]">{siteConfig.coFounderName}</span>
+                  <span className="text-[10px] text-[#767E77]">Co-Founder</span>
                 </div>
               </div>
             </div>

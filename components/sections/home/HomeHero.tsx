@@ -121,7 +121,7 @@ export function HomeHero() {
             </div>
 
             {/* Social Trust Badge */}
-            <div className="mt-10 pt-6 border-t border-[#EAE5DC] w-full max-w-md relative">
+            {/* <div className="mt-10 pt-6 border-t border-[#EAE5DC] w-full max-w-md relative">
               <span className="absolute -top-[5px] left-1/2 -translate-x-1/2 bg-[#FAF8F5] px-1.5">
                 <Sparkle className="w-3 h-3 text-[#E5A93C]" fill="#E5A93C" />
               </span>
@@ -155,7 +155,7 @@ export function HomeHero() {
                   +536
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column: Hero Visual with Overlay Cards */}
