@@ -2,6 +2,38 @@ import { ProjectItem } from "@/types";
 
 export const projectsData: ProjectItem[] = [
   {
+    id: "ideal-construction-pawar-kolhapur",
+    title: "Pawar Sir - Ideal Construction",
+    slug: "ideal-construction-pawar-kolhapur",
+    description:
+      "Ongoing turnkey architectural execution in Kolhapur for Pawar Sir (Ideal Construction). Featuring textured exterior facade finishes, architectural vertical louvers, double-height ceiling timber veneer paneling, floor-to-ceiling glass balconies, and dust-free surface masking designed by Ar. Satyajeet Bhosale.",
+    category: "residential",
+    status: "ongoing",
+    clientName: "Pawar Sir, Ideal Construction",
+    architectName: "Ar. Satyajeet Bhosale",
+    location: "Kolhapur",
+    completionDate: "In Progress (Active 2026)",
+    duration: "Active Ongoing Site",
+    coverImage: "/assets/ideal_construction/ideal_construction_7.jpeg",
+    galleryImages: [
+      "/assets/ideal_construction/ideal_construction_7.jpeg",
+      "/assets/ideal_construction/ideal_construction_2.jpeg",
+      "/assets/ideal_construction/ideal_construction_8.jpeg",
+      "/assets/ideal_construction/ideal_construction_1.jpeg",
+      "/assets/ideal_construction/ideal_construction_3.jpeg",
+      "/assets/ideal_construction/ideal_construction_4.jpeg",
+      "/assets/ideal_construction/ideal_construction_5.jpeg",
+      "/assets/ideal_construction/ideal_construction_6.jpeg",
+    ],
+    servicesProvided: [
+      "Textured Exterior Facade Finishes",
+      "Italian PU Wood & Veneer False Ceiling",
+      "Surface Masking & Dust-Free Protection",
+      "Double-Height Architectural Scaffolding",
+      "Turnkey Site Execution",
+    ],
+  },
+  {
     id: "dhairyasheel-mane-estate-kolhapur",
     title: "MP Dhairyasheel Mane Private Estate",
     slug: "dhairyasheel-mane-estate-kolhapur",

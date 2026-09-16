@@ -61,6 +61,16 @@ export const clientsAndArchitectsData: ClientOrArchitect[] = [
     collaborationCount: 1,
     testimonial: "From vertical oak wall paneling to double-height atrium sheer drape coordination and Italian PU polishing, the finishing quality is international.",
   },
+  {
+    id: "client-ideal-construction",
+    name: "Pawar Sir (Ideal Construction)",
+    type: "corporate",
+    companyName: "Ideal Construction",
+    logoOrAvatar: "/assets/ideal_construction/ideal_construction_7.jpeg",
+    location: "Kolhapur",
+    collaborationCount: 2,
+    testimonial: "Colourfull Spaces delivers turnkey site execution with impeccable dust-free surface masking, exterior texture application, and false ceiling woodwork.",
+  },
 ];
 
 export const galleryData: GalleryItem[] = [
@@ -151,6 +161,30 @@ export const galleryData: GalleryItem[] = [
     image: "/assets/kolhapur/kolhapur_3.jpeg",
     location: "Kolhapur",
     description: "Waterbody waterproofing, pavilion timber ceiling coating, and stone walkway treatment.",
+  },
+  {
+    id: "gal-ideal-1",
+    title: "Double-Height Living Atrium & Veneer False Ceiling",
+    category: "polishing",
+    image: "/assets/ideal_construction/ideal_construction_7.jpeg",
+    location: "Kolhapur",
+    description: "Architectural wood veneer ceiling installation, dust-free surface masking, and turnkey execution for Pawar Sir (Ideal Construction).",
+  },
+  {
+    id: "gal-ideal-2",
+    title: "Textured Facade Plaster & Vertical Louvers",
+    category: "exterior",
+    image: "/assets/ideal_construction/ideal_construction_8.jpeg",
+    location: "Kolhapur",
+    description: "Exterior texture plastering with geometric vertical louvers designed by Ar. Satyajeet Bhosale.",
+  },
+  {
+    id: "gal-ideal-3",
+    title: "Balcony Glass Slider & Room Framing",
+    category: "interior",
+    image: "/assets/ideal_construction/ideal_construction_2.jpeg",
+    location: "Kolhapur",
+    description: "Full glass balcony frame integration and floor protection during ongoing interior fitout.",
   },
 ];
 

@@ -4,6 +4,14 @@ import Link from "next/link";
 export function FeaturedProjects() {
   const projects = [
     {
+      title: "Pawar Sir - Ideal Construction, Kolhapur",
+      desc: "Turnkey architectural execution, textured facade louvers, timber veneer ceiling, and dust-free masking by Ar. Satyajeet Bhosale.",
+      status: "Ongoing",
+      statusColor: "bg-[#E5A93C] text-black font-semibold",
+      image: "/assets/ideal_construction/ideal_construction_7.jpeg",
+      href: "/projects",
+    },
+    {
       title: "MP Dhairyasheel Mane Estate, Kolhapur",
       desc: "Turnkey hillside estate execution, artisanal timber ceiling PU polishing, reflecting pools, and weather-shield facade by Ar. Satyajeet Bhosale.",
       status: "Ongoing",
@@ -69,8 +77,8 @@ export function FeaturedProjects() {
           </div>
         </div>
 
-        {/* 3 Project Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* 4 Project Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {projects.map((item, idx) => (
             <div
               key={idx}
