@@ -135,4 +135,36 @@ export const projectsData: ProjectItem[] = [
       "Turnkey Architectural Fitout",
     ],
   },
+  {
+    id: "silver-rise-santosh-barne-moshi",
+    title: "Silver Rise Luxury Residence - Santosh Barne",
+    slug: "silver-rise-santosh-barne-moshi",
+    description:
+      "Completed turnkey luxury residence interior execution in Moshi, Pune for Santosh Barne (Silver Rise Group). Featuring bespoke handcrafted teak temple with Italian PU finish, designer fluted TV lounge paneling, expansive double-height portico with classical columns, ambient cove ceiling illumination, and luxury architectural woodwork.",
+    category: "interior",
+    status: "completed",
+    clientName: "Santosh Barne, Silver Rise Group",
+    architectName: "Silver Rise Group & Design Team",
+    location: "Moshi, Pune",
+    completionDate: "Completed & Handed Over",
+    duration: "Delivered",
+    coverImage: "/assets/moshi_pune/moshi_1.jpeg",
+    galleryImages: [
+      "/assets/moshi_pune/moshi_1.jpeg",
+      "/assets/moshi_pune/moshi_2.jpeg",
+      "/assets/moshi_pune/moshi_3.jpeg",
+      "/assets/moshi_pune/moshi_4.jpeg",
+      "/assets/moshi_pune/moshi_5.jpeg",
+      "/assets/moshi_pune/moshi_6.jpeg",
+      "/assets/moshi_pune/moshi_7.jpeg",
+    ],
+    servicesProvided: [
+      "Luxury Interior Painting",
+      "Italian PU Wood Polish & Carving",
+      "Fluted Wall Paneling & TV Console",
+      "Double-Height Portico Ceilings",
+      "Turnkey Architectural Fitout",
+    ],
+  },
 ];
+
