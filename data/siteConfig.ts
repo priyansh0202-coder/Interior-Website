@@ -4,14 +4,14 @@ export const siteConfig = {
   logo: "/assets/favicon.png",
   favicon: "/assets/favicon.png",
   tagline: "Designing Spaces • Inspiring Lives",
-  founderName: "Ppan Nav",
-  coFounderName: "Mjh Nav",
+  founderName: "Panalal sahani",
+  coFounderName: "Nitesh sahani",
   foundedYear: 2005,
   description:
     "Colourfull Spaces brings luxury craft, precision finishes, and elegant interior solutions to homes and commercial spaces.",
-  phone: "+91 98XXX XXXXX",
-  whatsappNumber: "+919800000000",
-  email: "hello@colourfullspaces.com",
+  phone: "+91 90496 62630",
+  whatsappNumber: "+91 90496 62630",
+  email: "colourfullspaces20@gmail.com",
   officeAddress: "Colourfull Spaces Studio, Pune, Maharashtra, India",
   workingHours: "Monday - Saturday: 9:00 AM - 7:30 PM",
   experienceYears: 20,
@@ -22,6 +22,6 @@ export const siteConfig = {
   rating: "4.9",
   reviewsCount: "230+",
   socialLinks: {
-    whatsapp: "https://wa.me/919800000000",
+    whatsapp: "https://wa.me/9190496 62630",
   },
 };
